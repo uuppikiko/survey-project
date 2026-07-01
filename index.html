@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Feedback Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Customer Feedback Survey</h1>
+
+  <form id="surveyForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="satisfaction">How satisfied are you with our service?</label>
+    <select id="satisfaction" name="satisfaction">
+      <option value="very_satisfied">Very Satisfied</option>
+      <option value="satisfied">Satisfied</option>
+      <option value="neutral">Neutral</option>
+      <option value="unsatisfied">Unsatisfied</option>
+    </select>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
